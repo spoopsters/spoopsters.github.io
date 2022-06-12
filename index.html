@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Hello World</h1>
+        <style>
+            h1 {background-color: rgb(66, 41, 85); color: white; font-size:350%; text-align:center;}
+            body {background-color: rgb(204, 187, 216); position: absolute; top:75px; max-width: max-content; margin: auto; text-align:center}
+            p {color:rgb(25, 14, 34);}
+            .fixposition {
+                position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 75px;
+  margin-top: 0;
+  padding: 0px;
+  z-index: 10;
+            }
+            .centered-wrapper {
+    position: relative;
+    text-align: center;
+}
+.centered-wrapper:before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 0; height: 100%;
+    vertical-align: middle;
+}
+.centered-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+        </style>
+        <h1 class="fixposition">WEBSITE OF SPOOP</h1>
     </head>
-    <body>
-        <p>I'm hosted with GitHub Pages.</p>
-        <video src="x.mp4" controls>
+    <body class="centered-wrapper">
+        <div class="centered-content">
+            <p>deez</p>
+        </div>
     </body>
 </html>
